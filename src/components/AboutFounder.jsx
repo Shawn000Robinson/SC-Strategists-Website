@@ -40,7 +40,7 @@ export default function AboutFounder() {
                 mid-market businesses.
               </p>
               <p className="font-medium text-[#0f0f0f]">
-                His instinct is strategic. His bias is forward. His standard is absolute delivery.
+                Strategic instinct. Forward momentum. Absolute delivery.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export default function AboutFounder() {
 
           {/* Headshot */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-64 h-72 rounded-2xl border border-black/10 overflow-hidden shadow-sm">
+            <div className="relative w-80 h-96 rounded-2xl border border-black/10 overflow-hidden shadow-sm">
               <img
                 src="/headshot.jpg"
                 alt="Shawn Robinson"
