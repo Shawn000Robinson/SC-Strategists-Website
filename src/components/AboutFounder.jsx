@@ -1,6 +1,15 @@
+const pills = [
+  'Navy Nuclear',
+  'IBM Enterprise',
+  'Software Engineering',
+  'Fortune 100 Experience',
+  'Collaborative Leadership',
+  'AI Strategist',
+]
+
 export default function AboutFounder() {
   return (
-    <section id="story" className="relative py-32 px-6 bg-surface-1/40">
+    <section id="story" className="relative py-32 px-6 bg-[#dce6ef]">
       <div className="divider-gradient mb-0" />
 
       <div className="max-w-6xl mx-auto">
@@ -9,31 +18,38 @@ export default function AboutFounder() {
           {/* Copy */}
           <div>
             <p className="text-xs font-semibold text-accent tracking-[0.2em] uppercase mb-4">
-              About the Founder
+              Leadership
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0f0f0f] tracking-tight mb-8 leading-tight">
               Built by Someone Who's Been in the Room.
             </h2>
 
-            <div className="space-y-5 text-gray-400 text-base leading-relaxed">
+            <div className="space-y-5 text-gray-500 text-base leading-relaxed">
               <p>
-                Shawn Robinson has spent 20+ years at the intersection of technology
-                and enterprise sales. Trained as a Navy nuclear machinist mate, forged
-                at IBM leading 50+ engineers across 38 enterprise accounts, and proven
-                in the field closing deals from $100K to $19M across healthcare,
-                government, higher education, and financial services.
+                Shawn Robinson has spent over three decades at the intersection of complex technology and
+                enterprise growth. His expertise is rooted in the rigorous discipline of the Navy Nuclear
+                Power program, forged during his time as a Software Engineer and Manager at IBM leading
+                large teams across 38 Fortune 100 accounts, and sharpened over a 20-year career delivering
+                mid-market and enterprise software solutions.
               </p>
               <p>
-                His instinct is strategic. His bias is forward. His standard is excellence.
+                He has successfully led complex software initiatives and delivered transformative technology
+                solutions across healthcare, government, financial services, higher education, manufacturing,
+                retail, and beyond. A true generalist who speaks the language of every industry. Today, he
+                founded SC Strategists to bring that Fortune 500-level strategic execution directly to
+                mid-market businesses.
+              </p>
+              <p className="font-medium text-[#0f0f0f]">
+                His instinct is strategic. His bias is forward. His standard is absolute delivery.
               </p>
             </div>
 
             {/* Credential pills */}
             <div className="flex flex-wrap gap-2 mt-8">
-              {['Navy Nuclear', 'IBM Enterprise', '$19M Deals', '20+ Years', 'AI-First'].map((tag) => (
+              {pills.map((tag) => (
                 <span
                   key={tag}
-                  className="px-3 py-1 rounded-full text-xs font-medium text-gray-400 border border-white/10 bg-white/[0.03]"
+                  className="px-3 py-1 rounded-full text-xs font-medium text-gray-500 border border-black/10 bg-white"
                 >
                   {tag}
                 </span>
@@ -41,21 +57,14 @@ export default function AboutFounder() {
             </div>
           </div>
 
-          {/* Headshot placeholder */}
+          {/* Headshot */}
           <div className="flex justify-center lg:justify-end">
-            <div
-              className="relative w-64 h-72 rounded-2xl border border-white/10 bg-surface-2 overflow-hidden flex items-end justify-center"
-            >
-              {/* Placeholder gradient */}
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: 'linear-gradient(160deg, rgba(79,142,247,0.06) 0%, rgba(10,10,10,0.8) 100%)',
-                }}
+            <div className="relative w-64 h-72 rounded-2xl border border-black/10 overflow-hidden shadow-sm">
+              <img
+                src="/headshot.jpg"
+                alt="Shawn Robinson"
+                className="w-full h-full object-cover object-top"
               />
-              <p className="relative z-10 text-xs text-gray-600 pb-4 text-center px-4">
-                Headshot coming soon
-              </p>
             </div>
           </div>
 

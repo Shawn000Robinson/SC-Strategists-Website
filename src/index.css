@@ -8,13 +8,13 @@
   }
 
   body {
-    @apply bg-surface text-white font-sans antialiased;
-    background-color: #0a0a0a;
+    @apply bg-surface text-[#0f0f0f] font-sans antialiased;
+    background-color: #ebebeb;
   }
 
   ::selection {
-    background-color: rgba(79, 142, 247, 0.25);
-    color: #fff;
+    background-color: rgba(26, 58, 92, 0.15);
+    color: #0f0f0f;
   }
 
   ::-webkit-scrollbar {
@@ -22,11 +22,11 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #0a0a0a;
+    background: #f5f5f5;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #333;
+    background: #d1d5db;
     border-radius: 2px;
   }
 }
@@ -40,44 +40,34 @@
 /* Geometric grid background */
 .hero-grid {
   background-image:
-    linear-gradient(rgba(79, 142, 247, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(79, 142, 247, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(26, 58, 92, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 58, 92, 0.06) 1px, transparent 1px);
   background-size: 60px 60px;
   animation: gridPulse 6s ease-in-out infinite alternate;
 }
 
 @keyframes gridPulse {
-  0%   { opacity: 0.5; }
+  0%   { opacity: 0.4; }
   100% { opacity: 1; }
-}
-
-/* Noise texture overlay for depth */
-.noise::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1;
 }
 
 /* Glow effect for accent elements */
 .accent-glow {
-  box-shadow: 0 0 40px rgba(79, 142, 247, 0.08), 0 0 80px rgba(79, 142, 247, 0.04);
+  box-shadow: 0 0 40px rgba(26, 58, 92, 0.12), 0 0 80px rgba(26, 58, 92, 0.06);
 }
 
-/* Card hover glow */
+/* Card hover */
 .card-hover {
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .card-hover:hover {
-  border-color: rgba(79, 142, 247, 0.25);
-  box-shadow: 0 0 30px rgba(79, 142, 247, 0.06), 0 8px 32px rgba(0, 0, 0, 0.4);
+  border-color: rgba(26, 58, 92, 0.25);
+  box-shadow: 0 0 30px rgba(26, 58, 92, 0.08), 0 8px 32px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
 }
 
-/* Fade up animation for staggered reveals */
+/* Fade up animation */
 .fade-up {
   opacity: 0;
   transform: translateY(18px);
@@ -99,5 +89,5 @@
 /* Divider gradient line */
 .divider-gradient {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+  background: linear-gradient(90deg, transparent, rgba(26,58,92,0.15), transparent);
 }

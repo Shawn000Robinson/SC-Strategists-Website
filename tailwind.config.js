@@ -11,20 +11,20 @@ export default {
       },
       colors: {
         surface: {
-          DEFAULT: '#0a0a0a',
-          1: '#111111',
-          2: '#1a1a1a',
-          3: '#222222',
+          DEFAULT: '#fafafa',
+          1: '#ffffff',
+          2: '#f5f5f5',
+          3: '#eeeeee',
         },
         border: {
-          subtle: 'rgba(255,255,255,0.06)',
-          DEFAULT: 'rgba(255,255,255,0.10)',
-          strong: 'rgba(255,255,255,0.18)',
+          subtle: 'rgba(0,0,0,0.06)',
+          DEFAULT: 'rgba(0,0,0,0.10)',
+          strong: 'rgba(0,0,0,0.18)',
         },
         accent: {
-          DEFAULT: '#4f8ef7',
-          dim: 'rgba(79,142,247,0.15)',
-          glow: 'rgba(79,142,247,0.08)',
+          DEFAULT: '#1a3a5c',
+          dim: 'rgba(26,58,92,0.10)',
+          glow: 'rgba(26,58,92,0.06)',
         },
       },
       animation: {
