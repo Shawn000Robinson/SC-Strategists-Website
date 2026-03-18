@@ -42,7 +42,9 @@ export default function Nav() {
 
         {/* CTA */}
         <a
-          href="mailto:hello@scstrategists.com"
+          href="https://calendly.com/shawn-scstrategists/30min"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg bg-accent text-white text-sm font-semibold tracking-tight transition-all duration-200 hover:opacity-90 accent-glow"
         >
           Book Your Strategy Call

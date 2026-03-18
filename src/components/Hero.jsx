@@ -66,7 +66,9 @@ export default function Hero() {
         {/* CTAs */}
         <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-3">
           <a
-            href="mailto:hello@scstrategists.com"
+            href="https://calendly.com/shawn-scstrategists/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-white text-sm font-semibold tracking-tight transition-all duration-200 hover:opacity-90 hover:gap-3 accent-glow"
           >
             Schedule a Strategy Call

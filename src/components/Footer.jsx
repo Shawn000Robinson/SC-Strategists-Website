@@ -23,7 +23,9 @@ export default function Footer() {
             strategic AI tools your business needs to scale, fast.
           </p>
           <a
-            href="mailto:hello@scstrategists.com"
+            href="https://calendly.com/shawn-scstrategists/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-accent text-white text-sm font-semibold tracking-tight transition-all duration-200 hover:opacity-90 accent-glow"
           >
             Schedule a Strategy Call
